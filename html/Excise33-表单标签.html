@@ -1,0 +1,60 @@
+<html>
+	<body>
+		<form action="" method="get"> <!--表单-->
+			<h4>文本域：</h4>
+			名：
+			<input type="text" name="firstname" value="韩庆"><br /><!--表单类型为文本text，默认宽度是20-->
+			姓：
+			<input type="text" name="lastname" value="何"><br /><!--name的作用是什么，后续调用该文本框时用到,要能正确的被提交，name属性必须要有，相当于向函数中传递参数一样,name表示参数名，value表示参数值-->
+			<h4>密码域：</h4>
+			用户：
+			<input type="text" name="user"><br /> 
+			密码：
+			<input type="password" name="password"><br />
+			<p>
+			请注意，当您在密码域中键入字符时，浏览器将使用项目符号来代替这些字符。
+			</p>
+			<h4>复选框：</h4>
+			我喜欢自行车：
+			<input type="checkbox" name="Bike"> <br />
+			我喜欢汽车：
+			<input type="checkbox" name="Car"><br />
+			<h4>单选框：</h4>
+			男性：
+			<input type="radio" checked="checked" name="Sex" value="male"><br />
+			女性：
+			<input type="radio"  name="Sex" value="female"><br />
+			<h4>简单下拉列表：</h4>
+			<select name="cars"><!--下拉列表的名字-->
+				<option value="volvo">Volvo</option><!--选项的值-->
+				<option value="saab">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			</select>
+			<h4>另一个下拉列表：</h4>
+			<select name="cars"><!--下拉列表的名字-->
+				<option value="volvo">Volvo</option><!--选项的值-->
+				<option value="saab">Saab</option>
+				<option value="fiat" selected="selected">Fiat</option>
+				<option value="audi">Audi</option>
+			</select><br />
+			<h4>多行文本域（textarea）：</h4>
+			<textarea cols="30" rows="5">
+领先的 Web 技术教程 - 全部免费
+在w3school，你可以找到你所需要的所有的网站建设教程。
+从基础的HTML到XHTML，乃至进阶的XML、SQL、数据库、多媒体和WAP
+			</textarea>
+			<p>您无法对本例进行编辑，因为我们的在线编辑器使用 textarea 进行输入，
+			而浏览器不允许 textarea 中存在另一个 textarea。</p>
+			<h4>创建按钮：</h4>
+			<input type="button" value="Hello world!">
+			<h4>数据周围带标题的框：</h4>
+			<fieldset><!--fieldset表示控件组，一组放在一起-->
+				<legend>健康信息</legend>
+				身高：<input type="text" name="height"/>
+				体重：<input type="text" name="weight"/>
+				<input type="submit" >
+			</fieldset>
+		</form>
+	</body>
+</html>
